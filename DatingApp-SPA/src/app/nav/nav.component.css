@@ -1,3 +1,9 @@
 .dropdown-toggle, .dropdown-item {
     cursor: pointer;
 }
+
+.btn-primary.disabled, .btn-primary:disabled {
+    color: darkgrey;
+    background-color: white;
+    border-color: #78C2AD;
+}
