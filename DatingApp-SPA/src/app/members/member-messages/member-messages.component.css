@@ -23,3 +23,7 @@
     overflow-y: scroll;
     height: 400px;
 }
+
+.chat-body-send {
+    padding-bottom: 24px;
+}
