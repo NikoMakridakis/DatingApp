@@ -34,7 +34,7 @@ namespace DatingApp.API
         {
             services.AddDbContext<DataContext>(x => {
                 x.UseLazyLoadingProxies();
-                x.UseSqlite(Configuration.GetConnectionString("DefaultConnection"));
+                x.UseMySql(Configuration.GetConnectionString("DefaultConnection"));
             }); 
                 ConfigureServices(services);
         }
