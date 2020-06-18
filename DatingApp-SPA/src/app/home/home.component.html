@@ -1,27 +1,35 @@
-<div class="container mt-5">
-  <div *ngIf="!registerMode" style="text-align: center">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>               -->
+<!-- <script>new WOW().init();</script> -->
+<!-- wow animate__animated animate__fadeIn animate__slow -->
+
+<div class="container">
+  <div *ngIf="!registerMode">
     <h1>Find your match!</h1>
-    <p class="lead">Register an account to view your matches. All you need to do is sign up!</p>
+    <p class="lead">Register an account to view your matches</p>
+    <p class="lead">All you need to do is sign up!</p>
   </div>
 
-  <div *ngIf="registerMode" class="container">
+  <div *ngIf="registerMode">
     <div class="row justify-content-center">
       <div class="col-4">
         <app-register (cancelRegister)="cancelRegisterMode($event)"></app-register>
       </div>
     </div>
   </div>
-</div>
 
-<div class="wrapper" *ngIf="!registerMode">
-  <div class="formContent">
-    <form class="login-form" #loginForm="ngForm" (ngSubmit)="login()">
-      <input type="text" class="login" name="username" placeholder="username" required [(ngModel)]="model.username">
-      <input type="text" class="password" name="login" placeholder="password" required [(ngModel)]="model.password">
-      <input type="submit" class="submit" value="Log In">
-    </form>
-    <div class="formFooter">
-      <input type="submit" class="submit" id="register"value="Register" (click)="registerToggle()">
+  <div class="wrapper" *ngIf="!registerMode">
+    <div class="formContent">
+      <form class="login-form" #loginForm="ngForm" (ngSubmit)="login()">
+        <input type="text" class="login" name="username" placeholder="username" required [(ngModel)]="model.username">
+        <input type="text" class="password" name="login" placeholder="password" required [(ngModel)]="model.password">
+        <input type="submit" class="submit" value="Log In">
+      </form>
+      <div class="line-break wow animate__animated animate__fadeIn"></div>
+      <div class="formFooter">
+        <input type="submit" class="submit" id="register"value="Register" (click)="registerToggle()">
+      </div>
     </div>
   </div>
 </div>
+
