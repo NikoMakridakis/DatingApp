@@ -18,6 +18,10 @@
     font-family: "Montserrat", sans-serif;
     height: 100vh;
   }
+
+  .logo {
+      max-height: 40px;
+  }
   
   .container {
     background-color: #d1fff2;
