@@ -2,70 +2,63 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Template</title>
+  <title>DatingApp</title>
   <link rel="stylesheet" href="./home.component.css">
-
 </head>
-<body>
-<!-- partial:index.partial.html -->
+
 <head>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-<script>new WOW().init();</script>
-  <script>
-        function openNav() {
-          document.getElementById("mySidenav").style.width = "250px";
-        }
-
-        function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
-        }
-      </script>
+<script src="js/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
 </head>
 
 <!-- ===================================================== -->
 
 <html>
   <body>
-    <div class="container">
+    
+    <!-- ========================= SIDE NAV ========================= -->
+    <!-- <div id="mySidenav" class="sidenav">
+      <a class="closebtn">&times;</a>
+      <div class="menu-logo">
+      <img class="image-logo" src="https://tinyurl.com/y868xq2e"
+              alt="logo">
+      </div>
+      <a href="#">Hello, Sign In!</a>
+      <a href="#">Register</a>
+      <a href="#">Source Code</a>
+    </div> -->
       
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" 
-            onclick="closeNav()">&times;</a>
-        <div class="menu-logo">
+      
+    <!-- ========================= NAV BAR ========================= -->   
+    <div class="nav-bar">
+      <div class="nav-container-1">
+        <span>ICON</span>
+      </div>
+      <div class="nav-container-2">
         <img class="image-logo" src="https://tinyurl.com/y868xq2e"
-               alt="logo">
-        </div>
-        <a href="#">Hello, Sign In!</a>
-        <a href="#">Register</a>
-        <a href="#">Source Code</a>
+              alt="logo">
       </div>
-      
-      
-
-      <div class="nav-bar">
-        <div class="nav-container-1">
-          <span style="font-size:30px;cursor:pointer" onclick="openNav()">ICON</span>
+      <div class="nav-container-3">
+        <div class="button-height">
+          <input type="submit" class="button "value="Log In">
         </div>
-        <div class="nav-container-2">
-          <img class="image-logo" src="https://tinyurl.com/y868xq2e"
-               alt="logo">
-        </div>
-        <div class="nav-container-3">
-          <div class="button-height">
-            <input type="submit" class="button 
-                                        "
-               value="Log In">
-          </div>
-          <div class="button-height">
-            <input type="submit" class="button button-color"
-               value="Register">
-          </div>
+        <div class="button-height">
+          <input type="submit" class="button button-color"
+              value="Register">
         </div>
       </div>
+    </div>
 
-      <div class="content reverse top wow fade-up">
+    <div class="container">
+
+      <!-- ========================= MAIN CONTENT ========================= -->
+      <div class="content reverse top wow fade">
         <div class="content-1">
           <img class="image-1" src="https://tinyurl.com/y868xq2e"
                alt="menu">
@@ -77,7 +70,7 @@
         </div>
       </div>
 
-      <div class="content wow fade-up">
+      <div class="content wow fade">
         <div class="content-2">
           <h3>
             This is test text!
@@ -89,7 +82,7 @@
         </div>
       </div>
       
-      <div class="content reverse wow fade-up">
+      <div class="content reverse wow fade">
         <div class="content-1">
           <img class="image-1" src="https://tinyurl.com/y868xq2e"
                alt="menu">
@@ -101,7 +94,8 @@
         </div>
       </div>
       
-      <div class="footer wow fade-up">
+      <!-- ========================= FOOTER ========================= -->
+      <div class="footer wow fade">
         <div class="footer-item">
           <input type="submit" class="button"
                value="Log In">
@@ -115,10 +109,7 @@
     </div>
   </body>
 </html>
-<!-- partial -->
-  
-</body>
-</html>
+
 
 
 <!-- <div class="footer wow fade-up">

@@ -1,15 +1,14 @@
 html {
-    --color-main: #ffedf5;
-    --color-accent1: #ffabd9;
-    --color-accent2: #ffaabe;
-    --color-button1: #ffcee9;
-    --color-button2: #ffd8e2;
-    --color-hover1: #e9bdd5;
-    --color-hover2: #e6afe4;
-    --color-light: #ffd5eb;
-    --color-dark: rgba(152,123,150,0.8);
+    --white-pink: #ffedf5;
+    --pink: #ffabd9;
+    --orange-pink: #ffaabe;
+    --light-pink: #ffcee9;
+    --light-orange-pink: #ffd8e2;
+    --gray-pink: #e9bdd5;
+    --purple-pink: #e6afe4;
+    --dark-purple-pink: rgba(152,123,150,0.8);
     --font: "Montserrat", sans-serif;
-    background: var(--color-main);
+    background: var(--white-pink);
     font-family: var(--font);
   }
   
@@ -23,9 +22,9 @@ html {
   
   /*========================= NAV BAR =========================*/
   .nav-bar {
-    background: var(--color-accent1);
+    background: var(--pink);
     background: linear-gradient(30deg,    
-      var(--color-accent1) 0%, var(--color-accent2)   
+      var(--pink) 0%, var(--orange-pink)   
       100%);
     top: 0;
     position: fixed;
@@ -64,22 +63,22 @@ html {
   
   /*========================= SIDE MENU =========================*/
   
-  .sidenav {
+  /* .sidenav {
     height: 100%;
     width: 0;
     position: fixed;
     z-index: 3;
     top: 0;
     left: 0;
-    background: var(--color-main);
+    background: var(--white-pink);
     background: linear-gradient(30deg,    
-      var(--color-main) 0%, var(--color-light)   
+      var(--white-pink) 0%, var(--light-pink)   
       100%);
     overflow-x: hidden;
     transition: 0.3s;
     padding-top: 60px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
-  }
+  } */
   
   .menu-logo {
     text-align: center;
@@ -100,7 +99,7 @@ html {
   }
   
   .sidenav a:hover {
-    color: var(--color-dark);
+    color: var(--dark-purple-pink);
   }
   
   .sidenav .closebtn {
@@ -131,21 +130,21 @@ html {
       border-radius:25px;
       font-size: inherit;
     font-family: inherit;
-    font-weight: 1000;
+    font-weight: 500;
     color: inherit;
     cursor: pointer;
   }
   
   .button-color {
-    background: var(--color-button1);
+    background: var(--light-pink);
     background: linear-gradient(0deg, 
-      var(--color-button1) 0%, var(--color-button2) 100%);
+      var(--light-pink) 0%, var(--light-orange-pink) 100%);
   }
   
   .button:hover {
-    background: var(--color-hover1);
+    background: var(--gray-pink);
     background: linear-gradient(0deg, 
-      var(--color-hover1) 0%, var(--color-hover2) 100%);
+      var(--gray-pink) 0%, var(--purple-pink) 100%);
   }
   
   
@@ -214,20 +213,8 @@ html {
   }
   
   /*========================= TRANSITIONS =========================*/
-  .fade-up {
-    animation-name: fade-up;
+  .fade {
+    animation: fadeIn;
     animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-timing-function: ease-out;
-  }
-  
-  @keyframes fade-up {
-    0% {
-      transform: translate3d(0,3rem,0);
-      opacity: 0;
-    }
-    100% {
-      transform: translate3d(0,0,0);
-      opacity: 1;
-    }
+    animation-fill-mode: forwards;
   }
