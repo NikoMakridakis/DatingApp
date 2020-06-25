@@ -2,19 +2,14 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>DatingApp</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
   <link rel="stylesheet" href="./home.component.css">
-</head>
 
-<head>
-<link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
-<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-<script src="js/wow.min.js"></script>
-<script>
-  new WOW().init();
-</script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
 </head>
 
 <!-- ===================================================== -->
@@ -58,7 +53,7 @@
     <div class="container">
 
       <!-- ========================= MAIN CONTENT ========================= -->
-      <div class="content reverse top wow fade">
+      <div class="content reverse top" data-aos="fade-up">
         <div class="content-1">
           <img class="image-1" src="https://tinyurl.com/y868xq2e"
                alt="menu">
@@ -70,7 +65,7 @@
         </div>
       </div>
 
-      <div class="content wow fade">
+      <div class="content" data-aos="fade-up">
         <div class="content-2">
           <h3>
             This is test text!
@@ -82,7 +77,7 @@
         </div>
       </div>
       
-      <div class="content reverse wow fade">
+      <div class="content reverse" data-aos="fade-up">
         <div class="content-1">
           <img class="image-1" src="https://tinyurl.com/y868xq2e"
                alt="menu">
@@ -95,7 +90,7 @@
       </div>
       
       <!-- ========================= FOOTER ========================= -->
-      <div class="footer wow fade">
+      <div class="footer">
         <div class="footer-item">
           <input type="submit" class="button"
                value="Log In">
@@ -107,6 +102,12 @@
       </div>
       
     </div>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
 

@@ -14,6 +14,8 @@ html {
   
   body {
     margin: 0;
+    padding: 0;
+    overflow-x: hidden;
   }
   
   .container {
@@ -93,7 +95,7 @@ html {
     color: inherit;
     font-size: inherit;
     font-family: inherit;
-    font-weight: 600;
+    font-weight: 400;
     transition: 0.3s;
     white-space: nowrap;
   }
@@ -127,10 +129,10 @@ html {
     outline: none;
     background-color: Transparent;
     border: none;
-      border-radius:25px;
-      font-size: inherit;
+    border-radius:25px;
+    font-size: inherit;
     font-family: inherit;
-    font-weight: 500;
+    font-weight: 400;
     color: inherit;
     cursor: pointer;
   }
@@ -216,5 +218,6 @@ html {
   .fade {
     animation: fadeIn;
     animation-duration: 1s;
+    animation-delay: 0.5s;
     animation-fill-mode: forwards;
   }
