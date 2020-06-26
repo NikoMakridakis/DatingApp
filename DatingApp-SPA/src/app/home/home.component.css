@@ -43,6 +43,18 @@ html {
     flex-basis: 40px;
     padding-left: 1%;
   }
+
+  #menu-icon {
+    width: 25px;
+    padding: 0;
+    margin: 0;
+  }
+
+  #line {
+    border-bottom: 15px solid var(--dark-purple-pink);
+    background: transparent;
+
+  }
   
   .nav-container-2 {
     flex-grow: 1;
@@ -172,20 +184,31 @@ html {
     margin-top: 5rem;
   }
   
-  .content-1 {
+  .content-image-left {
     flex-grow: 1;
     flex-basis: 40px;
-    text-align: center;
-    height: 100%;
+    text-align: left;
+    height: 400px;
     z-index: 1;
     position: relative;
+    overflow: hidden;
+  }
+
+  .content-image-right {
+    flex-grow: 1;
+    flex-basis: 40px;
+    text-align: right;
+    height: 400px;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
   }
   
-  .image-1 {
-    max-width: 100%;
+  .image {
+    height: 100%;
   }
   
-  .content-2 {
+  .content-text {
     flex-grow: 1;
     flex-basis: 40px;
     text-align: center;
@@ -218,7 +241,19 @@ html {
   @media only screen and (max-width: 500px) {
     .content {
       flex-direction: column;
-    }  
+    }
+
+    .image {
+        max-height: 100%;
+      }
+
+    .content-image-left {
+        overflow: visible;
+    }
+
+    .content-image-right {
+        overflow: visible;
+    }
     
     .reverse {
       flex-direction: column-reverse;

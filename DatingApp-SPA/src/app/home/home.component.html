@@ -45,7 +45,11 @@
     <!-- ========================= NAV BAR ========================= -->   
     <div class="nav-bar">
       <div class="nav-container-1">
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">ICON</span>
+        <div id="menu-icon" onclick="openNav()">
+          <div id="line"></div>
+          <div id="line"></div>
+          <div id="line"></div>
+        </div>
       </div>
       <div class="nav-container-2">
         <img class="image-logo" src="../../assets/logo.png" alt="heart">
@@ -65,11 +69,10 @@
 
       <!-- ========================= MAIN CONTENT ========================= -->
       <div class="content reverse top">
-        <div class="content-1">
-          <img class="image-1" src="https://tinyurl.com/y868xq2e"
-               alt="menu">
+        <div class="content-image-left" data-aos="fade" data-aos-easing="ease-in">
+          <img class="image" src="../../assets/Couple1.png" alt="couple">
         </div>
-        <div class="content-2"> 
+        <div class="content-text"> 
           <h1>
             Ready to Join?
           </h1>
@@ -79,24 +82,22 @@
         </div>
       </div>
 
-      <div class="content" data-aos="fade-up">
-        <div class="content-2">
+      <div class="content" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="800">
+        <div class="content-text">
           <h3>
             This is test text!
           </h3>
         </div>
-        <div class="content-1">
-          <img class="image-1" src="https://tinyurl.com/y868xq2e"
-               alt="menu">
+        <div class="content-image-right">
+          <img class="image" src="../../assets/Couple2.png" alt="couple">
         </div>
       </div>
       
-      <div class="content reverse" data-aos="fade-up">
-        <div class="content-1">
-          <img class="image-1" src="https://tinyurl.com/y868xq2e"
-               alt="menu">
+      <div class="content reverse anchor" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="800">
+        <div class="content-image-left">
+          <img class="image" src="../../assets/Couple3.png" alt="couple">
         </div>
-        <div class="content-2">
+        <div class="content-text">
           <h3>
             This is test text!
           </h3>
@@ -104,7 +105,7 @@
       </div>
       
       <!-- ========================= FOOTER ========================= -->
-      <div class="footer">
+      <div class="footer" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="800" data-aos-anchor-placement="bottom">
         <div class="footer-item">
           <input type="submit" class="button button-big"
                value="Log In">
