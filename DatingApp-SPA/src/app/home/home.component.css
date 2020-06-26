@@ -65,7 +65,7 @@ html {
   
   /*========================= SIDE MENU =========================*/
   
-  /* .sidenav {
+  .sidenav {
     height: 100%;
     width: 0;
     position: fixed;
@@ -78,13 +78,21 @@ html {
       100%);
     overflow-x: hidden;
     transition: 0.3s;
-    padding-top: 60px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
-  } */
+  }
   
   .menu-logo {
     text-align: center;
-    padding-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-height: 100px;
+  }
+
+  .line {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid var(--dark-purple-pink);
+      width: 100%;
   }
   
   .sidenav a {
@@ -113,7 +121,6 @@ html {
   }
   
   @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
   

@@ -9,6 +9,15 @@
   <link rel="stylesheet" href="./home.component.css">
 
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
   
 </head>
 
@@ -18,22 +27,26 @@
   <body>
     
     <!-- ========================= SIDE NAV ========================= -->
-    <!-- <div id="mySidenav" class="sidenav">
-      <a class="closebtn">&times;</a>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" 
+          onclick="closeNav()">&times;</a>
       <div class="menu-logo">
-      <img class="image-logo" src="https://tinyurl.com/y868xq2e"
-              alt="logo">
+      <img class="menu-logo" src="https://tinyurl.com/y868xq2e"
+             alt="logo">
+      </div>
+      <div>
+        <div class="line"></div>
       </div>
       <a href="#">Hello, Sign In!</a>
       <a href="#">Register</a>
       <a href="#">Source Code</a>
-    </div> -->
+    </div>
       
       
     <!-- ========================= NAV BAR ========================= -->   
     <div class="nav-bar">
       <div class="nav-container-1">
-        <span>ICON</span>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">ICON</span>
       </div>
       <div class="nav-container-2">
         <img class="image-logo" src="https://tinyurl.com/y868xq2e"
@@ -53,7 +66,7 @@
     <div class="container">
 
       <!-- ========================= MAIN CONTENT ========================= -->
-      <div class="content reverse top" data-aos="fade-up">
+      <div class="content reverse top">
         <div class="content-1">
           <img class="image-1" src="https://tinyurl.com/y868xq2e"
                alt="menu">
@@ -107,6 +120,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+      AOS.refresh();
     </script>
   </body>
 </html>
