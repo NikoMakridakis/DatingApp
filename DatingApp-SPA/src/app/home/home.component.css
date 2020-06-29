@@ -252,12 +252,13 @@ html {
     
     .content {
         flex-direction: column;
+        flex-wrap: nowrap;
         margin: 20px;
         padding: 20px;
     }
 
     .top {
-        height: 100px;
+        height: 400px;
         margin-top: 75px;
     }
 
