@@ -32,6 +32,7 @@ html {
     position: fixed;
     z-index: 2;
     width: 100%;
+    overflow: hidden;
     display: flex;
     align-items: center;
     box-shadow: 0px 3px 8px 2px 
@@ -40,7 +41,7 @@ html {
   
   .nav-container-1 {
     flex-grow: 1;
-    flex-basis: 30px;
+    flex-basis: 10px;
     padding-left: 1%;
   }
 
@@ -60,7 +61,7 @@ html {
   
   .nav-container-2 {
     flex-grow: 1;
-    flex-basis: 30px;
+    flex-basis: 10px;
     text-align: center;
   }
   
@@ -71,7 +72,7 @@ html {
   
   .nav-container-3 {
     flex-grow: 1;
-    flex-basis: 30px;
+    flex-basis: 10px;
     display: flex;
     justify-content: flex-end;
     padding-right: 1%;
@@ -240,7 +241,7 @@ html {
   }
   
   /*========================= RESPONSIVE =========================*/
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 900px) {
     #menu-icon {
         width: 35px;
     }
@@ -250,19 +251,32 @@ html {
     }
     
     .content {
-      flex-direction: column;
+        flex-direction: column;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .top {
+        height: 100px;
+        margin-top: 75px;
     }
 
     .image {
-        max-height: 100%;
+        max-height: 280px;
       }
 
     .content-image-left {
+        margin: 0;
+        padding: 0;
         overflow: visible;
+        text-align: center;
     }
 
     .content-image-right {
+        margin: 0;
+        padding: 0;
         overflow: visible;
+        text-align: center;
     }
     
     .reverse {
