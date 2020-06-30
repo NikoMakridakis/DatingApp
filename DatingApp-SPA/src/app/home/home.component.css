@@ -128,8 +128,8 @@ html {
     white-space: nowrap;
   }
   
-  .sidenav a:hover {
-    color: var(--dark-purple-pink);
+  .sidenav .hover-link:hover {
+    background-color: var(--purple-pink);
   }
   
   .sidenav .closebtn {
@@ -219,13 +219,23 @@ html {
   .content-text {
     flex-grow: 1;
     flex-basis: 40px;
-    text-align: center;
+    text-align: left;
+    margin-right: 5%;
+    margin-left: 3%;
+
   }
 
   .sub-text {
     color: var(--dark-purple-pink);
+    font-weight: 1800;
+  }
+
+  .sub-text > strong {
+    color: var(--purple-pink);
+    font-size: 1.4rem;
   }
   
+
   /*========================= FOOTER =========================*/
   .footer {
     max-height: 50px;
@@ -255,12 +265,16 @@ html {
         flex-direction: column;
         flex-wrap: nowrap;
         margin: 20px;
-        padding: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+
     }
 
     .top {
-        height: 400px;
-        margin-top: 75px;
+        height: 460px;
+        margin-top: 80px;
+        padding-top: 20px;
     }
 
     .image {
@@ -279,6 +293,10 @@ html {
         padding: 0;
         overflow: visible;
         text-align: center;
+    }
+
+    .mobile-hide {
+        display: none;
     }
     
     .reverse {
