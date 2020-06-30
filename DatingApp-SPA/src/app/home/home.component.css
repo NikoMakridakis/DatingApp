@@ -103,11 +103,16 @@ html {
     max-height: 100px;
   }
 
-  .line {
+  .divider-center {
+      text-align: center;
+  }
+
+  .divider {
+      display: inline-block;
       padding-top: 20px;
       margin-bottom: 15px;
       border-bottom: 1px solid var(--dark-purple-pink);
-      width: 100%;
+      width: 90%;
   }
   
   .sidenav a {
@@ -118,7 +123,7 @@ html {
     color: inherit;
     font-size: inherit;
     font-family: inherit;
-    font-weight: 400;
+    font-weight: 800;
     transition: 0.3s;
     white-space: nowrap;
   }
@@ -246,10 +251,6 @@ html {
         width: 35px;
     }
 
-    #line {
-        margin-left: 10px;
-    }
-    
     .content {
         flex-direction: column;
         flex-wrap: nowrap;
