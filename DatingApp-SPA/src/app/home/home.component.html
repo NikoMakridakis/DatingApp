@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>DatingApp</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
-  <link rel="stylesheet" href="./home.component.css">
 
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -18,15 +17,17 @@
       document.getElementById("mySidenav").style.width = "0";
     }
   </script>
+  <link rel="stylesheet" href="./home.component.css">
+
   
 </head>
 
-<!-- ===================================================== -->
+  =====================================================
 
 <html>
   <body>
     
-    <!-- ========================= SIDE NAV ========================= -->
+    ========================= SIDE NAV =========================
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" 
           onclick="closeNav()">&times;</a>
@@ -42,7 +43,7 @@
     </div>
       
       
-    <!-- ========================= NAV BAR ========================= -->   
+    ========================= NAV BAR =========================   
     <div class="nav-bar">
       <div class="nav-container-1">
         <div id="menu-icon" onclick="openNav()">
@@ -64,9 +65,10 @@
       </div>
     </div>
 
-    <div class="container">
+    
 
-      <!-- ========================= MAIN CONTENT ========================= -->
+    ========================= MAIN CONTENT =========================
+    <div class="container" *ngIf="!registerMode || !loginMode">
       <div class="content reverse top">
         <div class="content-image-left" data-aos="fade" data-aos-easing="ease-in">
           <img class="image" src="../../assets/Couple1.png" alt="couple">
@@ -121,19 +123,30 @@
         </div>
       </div>
       
-      <!-- ========================= FOOTER ========================= -->
+      ========================= FOOTER =========================
       <div class="footer" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="800" data-aos-anchor-placement="bottom">
         <div class="footer-item">
-          <input type="submit" class="button button-big"
-               value="Log In">
+          <input type="submit" class="button button-big" value="Log In">
         </div>
         <div class="footer-item">
-          <input type="submit" class="button button-color button-big"
-               value="Register">
+          <input type="submit" class="button button-color button-big" id="register" value="Register" (click)="registerToggle()">
         </div>
       </div>
-      
+
     </div>
+
+    ========================= REGISTER =========================
+    <div class="container" *ngIf="registerMode">
+      <div class="content top">
+        <div class="content-text"> 
+          <h1>
+            Ready to Join?
+          </h1>
+        </div>
+      </div>
+
+    </div>
+
 
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -142,57 +155,24 @@
       AOS.refresh();
     </script>
   </body>
-</html>
+</html> -->
 
 
 
-<!-- <div class="footer wow fade-up">
-        <div class="footer-item">
-          <input type="submit" class="button"
-               value="Log In">
-        </div>
-        <div class="footer-item">
-          <input type="submit" class="button button-color"
-               value="Register">
-        </div>
-      </div>
-
-
-      <nav>
-        <a href="/" alt="heart logo" >
-          <img class="logo" src="../../assets/logo.png">
-        </a>
-      </nav>  
-    </div>
-  </body>
-</html>
-
-<div class="container">
-  <div *ngIf="!registerMode">
+<div class="container mt-5">
+  <div *ngIf="!registerMode" style="text-align: center">
     <h1>Find your match!</h1>
-    <p class="lead">Register an account to view your matches</p>
-    <p class="lead">All you need to do is sign up!</p>
+    <p class="lead">Register an account to view your matches. All you need to do is sign up!</p>
+    <div class="text-center">
+      <button class="btn btn-primary btn-lg mr-2" (click)="registerToggle()">Register</button>
+    </div>
   </div>
 
-  <div *ngIf="registerMode">
+  <div *ngIf="registerMode" class="container">
     <div class="row justify-content-center">
       <div class="col-4">
         <app-register (cancelRegister)="cancelRegisterMode($event)"></app-register>
       </div>
     </div>
   </div>
-
-  <div class="wrapper" *ngIf="!registerMode">
-    <div class="formContent">
-      <form class="login-form" #loginForm="ngForm" (ngSubmit)="login()">
-        <input type="text" class="login" name="username" placeholder="username" required [(ngModel)]="model.username">
-        <input type="text" class="password" name="login" placeholder="password" required [(ngModel)]="model.password">
-        <input type="submit" class="submit" value="Log In">
-      </form>
-      <div class="line-break wow animate__animated animate__fadeIn"></div>
-      <div class="formFooter">
-        <input type="submit" class="submit" id="register"value="Register" (click)="registerToggle()">
-      </div>
-    </div>
-  </div>
-</div> -->
+</div>

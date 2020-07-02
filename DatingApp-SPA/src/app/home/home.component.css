@@ -1,4 +1,4 @@
-html {
+/* html {
     --white-pink: #ffedf5;
     --pink: #ffabd9;
     --orange-pink: #ffaabe;
@@ -22,7 +22,7 @@ html {
     margin-bottom: 2rem;
   }
   
-  /*========================= NAV BAR =========================*/
+  ========================= NAV BAR =========================
   .nav-bar {
     background: var(--pink);
     background: linear-gradient(30deg,    
@@ -78,7 +78,7 @@ html {
     padding-right: 1%;
   }
   
-  /*========================= SIDE MENU =========================*/
+  ========================= SIDE MENU =========================
   
   .sidenav {
     height: 100%;
@@ -144,7 +144,7 @@ html {
     .sidenav a {font-size: 18px;}
   }
   
-  /*========================= BUTTONS =========================*/
+  ========================= BUTTONS =========================
   .button-height {
     align-self: center;
   }
@@ -177,7 +177,7 @@ html {
   }
   
   
-  /*========================= MAIN CONTENT =========================*/
+  ========================= MAIN CONTENT =========================
   .content {
     margin-top: 2rem;
     display: flex;
@@ -236,7 +236,7 @@ html {
   }
   
 
-  /*========================= FOOTER =========================*/
+  ========================= FOOTER =========================
   .footer {
     max-height: 50px;
     margin-top: 2rem;
@@ -255,10 +255,56 @@ html {
       transform: scale(1.5);
   }
   
-  /*========================= RESPONSIVE =========================*/
-  @media only screen and (max-width: 900px) {
+  ========================= RESPONSIVE =========================
+  @media (max-width: 900px) {
+
+    .content {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-left: 20%;
+        margin-right: 20%;
+        padding-bottom: 40px;
+        padding-left: 10%;
+        padding-right: 10%;
+
+    }
+
+    .top {
+        height: 460px;
+        margin-top: 80px;
+    }
+
+    .image {
+        max-height: 280px;
+      }
+
+    .content-image-left {
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+        text-align: center;
+    }
+
+    .content-image-right {
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+        text-align: center;
+    }
+
+    .mobile-hide {
+        display: none;
+    }
+
+    .reverse {
+      flex-direction: column-reverse;
+    }
+  }
+  
+  @media only screen and (max-width: 550px) {
     #menu-icon {
         width: 35px;
+        padding-left: 10px;
     }
 
     .content {
@@ -304,10 +350,10 @@ html {
     }
   }
   
-  /*========================= TRANSITIONS =========================*/
+  ========================= TRANSITIONS =========================
   .fade {
     animation: fadeIn;
     animation-duration: 1s;
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
-  }
+  } */
